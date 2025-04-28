@@ -1,0 +1,53 @@
+.detecting_btn{
+    width: 13vw;
+    height: 6.5vh;
+    font-size: 14px;
+    font-weight: bolder;
+    text-align: center;
+    color: white;
+    outline: none;
+    border: 0px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 13vh;
+}
+#start_btn{  
+    background-color: green;  
+    margin-left: -15%; 
+}
+#stop_btn{
+    background-color: red;
+    margin-left: 25%;
+}
+.btn_images{
+    width: 5vw;
+    height: 8vh;
+    background-size: 10%;
+}
+#blank_scr{
+    width: 50vw;
+    height: 60vh;
+    background-color: black;
+    margin: 3% auto;
+}
+#start_icon{
+    text-align: center;
+    margin-top: auto;
+    padding-right: 3%;
+}
+#stop_icon{
+    text-align: center;
+    margin-top: auto;
+    padding-right: 3%;
+}
+.button_section{
+    display: grid; 
+    grid-template-columns:repeat(2,1fr);
+    max-width: 300px;
+    margin: auto;
+}
+.block{
+    text-align: center;
+    display: inline-block;
+
+}
