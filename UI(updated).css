@@ -1,9 +1,13 @@
 body {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    min-height: 100vh;  
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    background: linear-gradient(135deg, hsl(240, 66%, 59%), hsl(0, 90%, 59%));
     background-size: 400% 400%;
-    animation: bodyBackgroundMove 15s ease infinite;
+    animation: bodyBackgroundMove 5s ease infinite;
     font-family: 'Poppins', sans-serif;
 }
 @keyframes bodyBackgroundMove {
@@ -22,18 +26,18 @@ body {
     border: 0px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 13vh;
+    margin-top: 8vh;
 }
 #start_btn{  
     background-color: green;  
-    margin-left: -15%; 
+    margin-left: -25%; 
 }
 #start_btn:hover {
-    background-color: #00cc00; 
+    background-color: #00cc00;
 }
 #stop_btn{
     background-color:  #f35353;
-    margin-left: 25%;
+    margin-left: 10%;
 }
 #stop_btn:hover {
     background-color:  red;
@@ -44,11 +48,19 @@ body {
     background-size: 10%;
 }
 #blank_scr{
-    width: 50vw;
-    height: 60vh;
-    background-color: black;
-    margin: 3% auto;
+    width: 40vw;
+    height: 55vh;
+    background-image: url('asl_image.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 8% auto;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: opacity 2s ease;
 }
 #start_icon{
     text-align: center;
@@ -69,4 +81,32 @@ body {
 .block{
     text-align: center;
     display: inline-block;
+}
+#first_section, #second_section {
+    width: 45%;
+}
+#second_section {
+    position: relative;
+    height: 90vh;
+    margin-left: 2%;
+    background-color: white;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+#second_section::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url('logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%; 
+    opacity: 0.5;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
 }
